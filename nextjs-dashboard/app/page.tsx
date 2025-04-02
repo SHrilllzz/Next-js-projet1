@@ -17,13 +17,9 @@ export default function Page() {
       <div className={styles.shape} />
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-purple-50 px-6 py-10 md:w-2/5 md:px-20">
-          <p className={` ${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Inwi web application.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-purple-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-          </p>
+          <p className={` ${lusitana.className} text-xl text-purple-800 md:text-3xl md:leading-normal`}>
+            <strong>Hi, My name is Maha Riad, this is a small web app i coded, Welcome to the Inwi website.</strong> 
+            </p>
 
           <Link
             href="/login"
@@ -35,12 +31,21 @@ export default function Page() {
 
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
+          
           <Image
         src="/hero-desktop.png"
-        width={2000}
+        width={1000}
         height={800}
         className="hidden md:block"
         alt="Screenshots of the dashboard project showing desktop version"
+      />
+      
+      <Image
+        src="/hero-mobile.png"
+        width={560}
+        height={620}
+        className="block md:hidden"
+        alt="Screenshot of the dashboard project showing mobile version"
       />
         </div>
       </div>
