@@ -3,13 +3,12 @@
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true, // The skipLibCheck option can help bypass type-checking issues in third-party libraries.
-    "strict": false, // true changed to false
+    "skipLibCheck": true,
+    "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "Node16",
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Node16",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -30,8 +29,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
-    "scripts/seed.js",
-    "app/dashboard/customers"
-  ],
+    "scripts/seed.js"
+, "app/dashboard/customers"  ],
   "exclude": ["node_modules"]
 }
